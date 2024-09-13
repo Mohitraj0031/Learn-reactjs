@@ -1,0 +1,14 @@
+Props in React 
+->Short for properties
+->Mechanism for passing data
+->Read-only by default
+
+Usage
+->Pass data from parent to child component.
+->Makes components reusable.
+->Defined as Attibutes in JSX
+
+Key Points
+->Data flows one-ways(downwards).
+->Props are immutable.
+->Used for communication between components.

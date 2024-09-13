@@ -1,0 +1,22 @@
+Conditional Rendering
+-> Displaying content based on certain conditions.
+-> Allows for dynamic user interfaces.
+Methods
+-> If-else statements:
+-> Ternary operators:
+-> Logical operators:
+
+benefits
+-> Enhances user experience.
+-> Reduces unnecessary rendering.
+-> Makes apps more interactve and responsive.
+
+Example
+1. if (foodItems.length === 0){
+    return <h3>I am still hungry</h3>;
+
+}
+
+2.{foodItems.length === 0 ? <h3>I am still hungry</h3> : null }
+
+3. {foodItems.lenght === 0 && <h3>I am still hungry</h3>}

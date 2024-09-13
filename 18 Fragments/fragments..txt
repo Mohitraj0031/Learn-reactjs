@@ -1,0 +1,7 @@
+Allows grouping  of multiple elements without extra DOM nodes.
+
+Clear DOM and consistent styling
+
+Syntax:-
+1. <React.Fragment>... </React.Fragment>
+2. Short <>...</>

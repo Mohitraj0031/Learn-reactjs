@@ -1,0 +1,30 @@
+--->Purpose:
+Render lists fro  array data.
+-->JSX:
+ Elements: Transform array items into JSX.
+-->Inline Rendering: Direct inside JSX
+{items.map(item => li key =  {item.id}>{item.name}</li>)}
+
+--> Assign unique key for optimized re-renders.
+<div key={item.id}>{item.name}</div>
+
+Example:-
+
+funtion App(){
+    let foodItems = ["Dal","Green Vegetable","Roti","Salad","Milk","Ghee"];
+
+return (
+    <>
+      <h1>Healthy Food</h1>
+      <ul className="list-group">
+        {foodItems.map(item) => {
+            <li key = (item) className="list-group-item">{item}</li>
+        }}
+      </ul>
+    
+    </>
+);
+
+
+
+}

@@ -10,11 +10,13 @@ function App() {
 
   const todoItems = [
      {
+      id:0,
       name:"Buy Milk",
       duedate:"4/10/2024"
 
      },
-     { 
+     {
+      id:1,
       name:"Go To College",
       duedate:"4/10/2024"
 
@@ -26,7 +28,7 @@ function App() {
 
     <AppName/>
     <AddTodo/>
-    <TodoItems todoItems = {todoItems}></TodoItems>
+    <TodoItems todoItems = {todoItems} ></TodoItems>
 
   </center>
 }

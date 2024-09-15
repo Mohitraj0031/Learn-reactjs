@@ -4,7 +4,7 @@ const TodoItems = ({ todoItems }) => {
     return  (   
     <div className="item-container">
 
-    {todoItems.map( (item) => (<TodoItem todoDate={item.duedate} todoName={item.name}>
+    {todoItems.map( (item) =>  ( <TodoItem  key = {item.id} todoDate={item.duedate} todoName={item.name}>
 
     </TodoItem>
     ))}

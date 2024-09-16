@@ -1,0 +1,3 @@
+Example.Jsx  contain a component of then to add more readability and functionality inspite of importing 
+App.css in Example.jsx , we will define a separate css file names as "Example.module.css". Then import it 
+in the Example.jsx file. 

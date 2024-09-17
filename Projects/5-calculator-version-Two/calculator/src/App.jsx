@@ -5,11 +5,23 @@ import ButtonsContainer from "./components/ButtonsContainer";
 import { useState } from "react";
 
 function App() { 
-   let [calVal,setcalVal] = useState("");
+   const [calVal,setcalVal] = useState("");
+   const onButtonClick = (buttonText) => {
+    if(buttonText === "C"){
+      setcalVal("");
+
+    }else if(buttonText === "="){
+      const result = eval(calVal);
+      setcalVal(result);
+    }else {
+      const newDisplayValue = calVal + buttonText;
+      setcalVal(newDisplayValue);
+     }
+  }
 
   return <div className={css.calculator}>
     <Display displayValue = {calVal}></Display>
-    <ButtonsContainer onButtonClick={() => console.log("button clicked.")}></ButtonsContainer>
+    <ButtonsContainer onButtonClick={onButtonClick}></ButtonsContainer>
   </div>
    
   

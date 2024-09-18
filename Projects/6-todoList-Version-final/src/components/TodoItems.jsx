@@ -1,17 +1,16 @@
 import TodoItem from "./TodoItem"
 import css from "./TodoItems.module.css";
 
-const TodoItems = ({ todoItems }) => {
+const TodoItems = ({ todoItems,onDeleteClick }) => {
     return  (   
-    <div className={css.ItemsContainer}>
+    <div className={css.itemsContainer}>
 
-    {todoItems.map((item)  =>  ( <TodoItem  key = {item.id} todoDate={item.duedate} todoName={item.name}>
-
-    </TodoItem>
+    {todoItems.map((item)  =>  ( 
+      <TodoItem  todoDate={item.duedate} todoName={item.name} onDeleteClick={onDeleteClick}></TodoItem>
     ))}
     
     </div> 
   );
-}
+};
 
 export default TodoItems;

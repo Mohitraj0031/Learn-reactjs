@@ -13,13 +13,13 @@ function App() {
   
 
   const initailTodoItems = [
-     { id:0,
+     { 
       name:"Buy Milk",
       duedate:"4/10/2024"
 
      },
      {
-      id:1,
+      
       name:"Go To College",
       duedate:"4/10/2024"
 
@@ -29,7 +29,6 @@ function App() {
     const [todoItems,setTodoItems] = useState([]); // put this is useState "initailTodoItems"
     
     const handleNewItem =(itemName, itemDueDate) =>{
-      console.log(`New Item Added : ${itemName} Date:${itemDueDate}`);
       const newTodoItems = [...todoItems, 
         {
           

@@ -1,0 +1,16 @@
+Root Component:
+-> The App is the main or root component of a React application.
+-> It's the starting point of your React component tree.
+
+Virtual DOM:
+-> React creats an in-memory structure called the virtual DOM.
+-> Different from the actual browser DOM.
+-> It's a lightweight representation where each node stands for a component and its attributs.
+
+Reconciliation Process:
+-> When component data changes, React updates the virtual DOM's state to mirror these changes.
+-> React then compares the current and previous versions of the virtual DOM.
+-> It idetifies the specific nodes that need updating.
+-> Only these nodes are updated in the real browser DOM, making it efficient.
+
+-> 

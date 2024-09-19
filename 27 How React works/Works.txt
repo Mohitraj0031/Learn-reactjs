@@ -13,4 +13,21 @@ Reconciliation Process:
 -> It idetifies the specific nodes that need updating.
 -> Only these nodes are updated in the real browser DOM, making it efficient.
 
--> 
+React and ReactDOM:
+-> The actual updating of the browser's DOM isn't done by React itself.
+-> It's handled by a companion library called react dom.
+
+Root Element:
+-> The root div acts as a container for the React app.
+-> The script tag is where the React app starts executing.
+-> If you check main.tsx, the component tree is rendered inside this root element.
+
+Strict Mode Component:
+-> It's a special component in React.
+-> Doesn't have a visual representation.
+-> Its purpose is to spot potential issues in your React app.
+
+Platform Independence:
+-> React's design allows it to be platform agnostic.
+-> While react-dom helps build web UL's using React , ReactNative can be 
+be used to craft mobile app UIs 

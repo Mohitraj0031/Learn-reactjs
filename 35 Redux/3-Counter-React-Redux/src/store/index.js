@@ -1,30 +1,17 @@
-import {configureStore, createSlice} from "@reduxjs/toolkit"
+import {configureStore} from "@reduxjs/toolkit";
+import counterSlice from './counter';
+import privacySlice from "./privacy";
 
-
-
-
-const counterSlice = createSlice({
-    name: "counter",
-    initialState: { counterVal: 0},
-    reducers: {
-        increment: (state) => {
-            state.counterVal++;
-        },
-        decrement: (state) =>{
-            state.counterVal--;
-        },
-        add: (state,action) =>{console.log(state,action)},
-        subtract: (state,action)=>{console.log(state,action)},
-    }
-});
 
 
 
 const counterStore = configureStore({reducer: {
-   counter: counterSlice.reducer
+   counter: counterSlice.reducer,
+   privacy: privacySlice.reducer,
 }});
 
-export const counterActions =  counterSlice.action;
+
+
 export default counterStore;
 
 
